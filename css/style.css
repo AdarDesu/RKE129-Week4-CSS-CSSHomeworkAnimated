@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+
+*
+{
+    text-decoration: none;
+}
+
+body
+{
+    background-color: rgb(30, 30, 30);
+}
+
+.mainheading
+{   
+    opacity: 0;
+    color: #eeeeee;
+    font-size: 3rem;
+    text-align: center;
+    margin: 1rem auto;
+    font-family: 'Londrina Outline', cursive;
+    animation: HeadingRGB 5s forwards infinite;
+}
+
+@keyframes HeadingRGB
+{
+    0% {color: #aa3333; text-shadow: 0 0 1rem #aa3333; opacity: 1}
+    33% {color: #33aa33; text-shadow: 0 0 1rem #33aa33;}
+    67% {color: #3333aa; text-shadow: 0 0 1rem #3333aa;}
+    100% {color: #aa3333; text-shadow: 0 0 1rem #aa3333; opacity: 1}
+}
+
+.ingredients
+{
+    opacity: 0;
+    border-radius: 1rem;
+    background-color: rgb(40, 40, 40);
+    border: 2px solid darkslategray;
+    box-shadow: 0 0 0.5rem darkslategray;
+    width: fit-content;
+    margin: 0 auto;
+    color: whitesmoke;
+    display: flex;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    animation: FadeIngredients 1s forwards; 
+    position: relative;
+    z-index: -1;
+    animation-delay: 0.5s;
+}
+
+@keyframes FadeIngredients
+{
+    0% {opacity: 0; bottom: -15rem}
+    33% {opacity: 0}
+    90% {z-index: -1;}
+    100% {opacity: 1; bottom: 0rem; z-index: 1;}
+}
+
+.recipetable
+{
+    margin: 10px auto;
+}
+
+.rice
+{
+    height: 6.5rem;
+    padding-bottom: 12px;
+    padding-left: 1rem;
+    margin: 0 auto;
+}
+
+.rice:hover
+{
+    transform: scale(115%);
+    transition-duration: 50ms;
+}
+
+.instructions
+{
+    opacity: 0;
+    border-radius: 1rem;
+    background-color: rgb(40, 40, 40);
+    border: 2px solid darkslateblue;
+    box-shadow: 0 0 0.5rem darkslateblue;
+    width: 75%;
+    color: whitesmoke;
+    margin: 1rem auto;
+    animation: FadeInstructions 1s forwards; 
+    animation-delay: 0.25s;
+    z-index: 1;
+}
+
+@keyframes FadeInstructions
+{
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+#inst
+{
+    padding-left: 3rem;
+}
+
+.instructionslist
+{
+    background-color: rgb(40, 40, 40);
+    color: whitesmoke;
+    margin: 1rem auto;
+    width: fit-content;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+#listtitle
+{
+    color: olivedrab;
+}
+
+.help
+{
+    opacity: 0;
+    border-radius: 1rem;
+    background-color: rgb(40, 40, 40);
+    border: 2px solid darkslategrey;
+    box-shadow: 0 0 0.5rem darkslategrey;
+    color: whitesmoke;
+    margin: 1rem auto;
+    width: fit-content;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    animation: FadeHelp 1s forwards; 
+    position: relative;
+    z-index: -1;
+    animation-delay: 0.5s;
+}
+
+@keyframes FadeHelp
+{
+    0% {opacity: 0; top: -15rem}
+    33% {opacity: 0}
+    90% {z-index: -1;}
+    100% {opacity: 1; top: 0rem; z-index: 1;}
+}
+
+#span
+{
+    text-decoration: none;
+    color: darkcyan;
+}
+
+#hr
+{   
+    width: 0%;
+    animation: Hr 0.5s forwards;
+    animation-delay: 1.25s;
+}
+
+
+@keyframes Hr
+{
+    0% {width: 0%}
+    100% {width: 90%}
+}
+
+.footer
+{   
+    opacity: 0;
+    color: white;
+    text-align: center;
+    animation: FadeHelp 1s forwards; 
+    animation-delay: 0.75s;
+}
+
+@keyframes FadeFooter
+{
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
